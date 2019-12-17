@@ -1,0 +1,12 @@
+.title{
+    color: $black;
+    font-size: 100pt;
+    position: absolute;
+    left: 70px;
+    bottom: 70px;
+}
+
+.title span{
+    color: $darkBlue;
+    transition: 0.2s;
+}

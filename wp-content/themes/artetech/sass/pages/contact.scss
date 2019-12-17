@@ -1,0 +1,44 @@
+form{
+    width: 60%;
+    margin: 20px 0 0 70px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: $grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'light';
+}
+
+
+.wpcf7-submit{
+    width: 200px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: $darkBlue;
+    color: $white;
+    float: right;
+    text-transform: lowercase;
+    transition: 0.2s;
+}
+
+.wpcf7-submit:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.screen-reader-response{
+    display: none;
+}
+
+.wpcf7-not-valid-tip, .wpcf7-response-output{
+    color: red;
+    margin-left: 20px;
+}
+

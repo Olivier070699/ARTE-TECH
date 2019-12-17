@@ -1,0 +1,36 @@
+.sidebar{
+    background-color: $darkBlue;
+    background-image: linear-gradient(to bottom, $lightBlue , $darkBlue);
+    width: 220px;
+    border-top-right-radius: 100px;
+    height: 80vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-primair{
+    text-align: center;
+    list-style-type: none;
+}
+
+#menu-primair li{
+    width: 200px;
+    padding: 10px 0;
+}
+
+#menu-primair li:hover{
+    background-color: $lightBlue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#menu-primair a{
+    color: $white;
+    text-decoration: none;
+    font-size: 15pt;
+    font-family: 'light';
+}

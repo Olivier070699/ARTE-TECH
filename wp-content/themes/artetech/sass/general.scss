@@ -15,9 +15,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 // sass --watch sass/general.scss style.css
 
-// @import 'compass';
-@import 'colors';
+// variables
+@import './variables_site/colors.scss';
+@import './variables_site/fonts.scss';
+
 @import 'navigation';
+
+// pages
+@import './pages/home.scss';
+@import './pages/contact.scss';
+
 
 *{
     margin:0;
@@ -26,24 +33,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body{
-    display: flex;
     width: 100%;
-}
-
-.sidebar{
-    flex: wrap;
-    background-color: $lightGrey;
-    width: 75px;
-    height: 100vh;
+    color: $black;
+    font-family: 'light';
 }
 
 .container{
-    flex: wrap;
     background-color: $white;
-    width:100%;
+    width: calc(100% - 220px);
+    position: absolute;
+    right: 0;
     height: 100vh;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;     
     box-sizing: border-box; 
 }
 
+h3{
+    font-weight: bold;
+    color: #000;
+    margin-left: 3%;
+    font-size: 32pt;
+    font-family: 'bold';
+}

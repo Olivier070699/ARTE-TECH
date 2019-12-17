@@ -12,6 +12,107 @@ Text Domain: twentyfourteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@font-face {
+  font-family: "light";
+  src: url(fonts/CRC35.otf) format("opentype");
+}
+@font-face {
+  font-family: "bold";
+  src: url(fonts/CRC65.otf) format("opentype");
+}
+.sidebar {
+  background-color: #1066DC;
+  background-image: linear-gradient(to bottom, #4192ff, #1066DC);
+  width: 220px;
+  border-top-right-radius: 100px;
+  height: 80vh;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-primair {
+  text-align: center;
+  list-style-type: none;
+}
+
+#menu-primair li {
+  width: 200px;
+  padding: 10px 0;
+}
+
+#menu-primair li:hover {
+  background-color: #4192ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#menu-primair a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15pt;
+  font-family: "light";
+}
+
+.title {
+  color: #000;
+  font-size: 100pt;
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+}
+
+.title span {
+  color: #1066DC;
+  transition: 0.2s;
+}
+
+form {
+  width: 60%;
+  margin: 20px 0 0 70px;
+}
+
+form input, form textarea {
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "light";
+}
+
+.wpcf7-submit {
+  width: 200px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1066DC;
+  color: #fff;
+  float: right;
+  text-transform: lowercase;
+  transition: 0.2s;
+}
+
+.wpcf7-submit:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.screen-reader-response {
+  display: none;
+}
+
+.wpcf7-not-valid-tip, .wpcf7-response-output {
+  color: red;
+  margin-left: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,25 +120,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body {
-  display: flex;
   width: 100%;
-}
-
-.sidebar {
-  flex: wrap;
-  background-color: #f0eff4;
-  width: 75px;
-  height: 100vh;
+  color: #000;
+  font-family: "light";
 }
 
 .container {
-  flex: wrap;
-  background-color: #fafafc;
-  width: 100%;
+  background-color: #fff;
+  width: calc(100% - 220px);
+  position: absolute;
+  right: 0;
   height: 100vh;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+h3 {
+  font-weight: bold;
+  color: #000;
+  margin-left: 3%;
+  font-size: 32pt;
+  font-family: "bold";
 }
 
 /*# sourceMappingURL=style.css.map */
