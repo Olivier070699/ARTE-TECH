@@ -18,6 +18,7 @@ function task_activate(){
         $sql = 'CREATE TABLE ' . $task_table . '(
             id INTEGER(10) UNSIGNED AUTO_INCREMENT,
             task_description VARCHAR(65000),
+            materials VARCHAR(65000),
             client_id INTEGER(10),
             employe_id INTEGER(10),
             km INTEGER,
