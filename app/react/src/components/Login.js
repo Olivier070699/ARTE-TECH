@@ -1,9 +1,9 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-undef */
 import React from 'react';
-import Navbar from './Navigation';
 import axios from 'axios';
 import { Redirect } from '@reach/router';
+import Navbar from './Navigation';
 
 class Login extends React.Component{
 
@@ -67,31 +67,34 @@ class Login extends React.Component{
         } else {
             return (
                 <div>
-                    <form onSubmit={this.onFormSubmit}>
-                    <label className="form-group">
-                        Username:
-                        <input
-                            type="text"
-                            className="form-control"
-                            name="username"
-                            value={username}
-                            onChange={this.handleOnChange}
-                        />
-                    </label>
-                    <br />
-                    <label className="form-group">
-                        Password:
-                        <input
-                            type="password"
-                            className="form-control"
-                            name="password"
-                            value={password}
-                            onChange={this.handleOnChange}
-                        />
-                    </label>
-                    <br />
-                    <button className="btn btn-primary mb-3" type="submit">Login</button>
-                    </form>
+                    <div>
+                        <Navbar />
+                        <form onSubmit={this.onFormSubmit}>
+                        <label className="form-group">
+                            Username:
+                            <input
+                                type="text"
+                                className="form-control"
+                                name="username"
+                                value={username}
+                                onChange={this.handleOnChange}
+                            />
+                        </label>
+                        <br />
+                        <label className="form-group">
+                            Password:
+                            <input
+                                type="password"
+                                className="form-control"
+                                name="password"
+                                value={password}
+                                onChange={this.handleOnChange}
+                            />
+                        </label>
+                        <br />
+                        <button className="btn btn-primary mb-3" type="submit">Login</button>
+                        </form>
+                    </div>
                 </div>
             );
         }
